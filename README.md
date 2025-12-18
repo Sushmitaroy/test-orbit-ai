@@ -5,7 +5,7 @@ AI-Powered QA & Test Automation Experiments
 
 Test-Orbit is a personal portfolio repository that showcases my hands-on exploration of AI-driven testing, quality engineering, and automation.
 
-As a QA Architect, my goal with this repository is to:
+As a QA Automation lead, my goal with this repository is to:
 
 Explore how Generative AI can enhance test design, automation, and quality analysis
 
@@ -30,10 +30,6 @@ This repository serves as a learning playground, experimentation space, and refe
 📚 Document learnings and best practices for QA engineers
 
 🧩 What You’ll Find Here
-
-This repository will evolve over time and may include:
-
-🔹 AI for Test Design
 
 Automated test case generation
 
