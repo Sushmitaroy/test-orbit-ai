@@ -1,0 +1,59 @@
+Test Cases for Login Functionality
+
+1. Test Case: Successful Login
+   - Precondition: User has a valid username and password.
+   - Steps:
+     1. Navigate to the login page.
+     2. Enter valid username.
+     3. Enter valid password.
+     4. Click on the login button.
+   - Expected Result: User is redirected to the dashboard.
+
+2. Test Case: Unsuccessful Login with Invalid Password
+   - Precondition: User has a valid username but an invalid password.
+   - Steps:
+     1. Navigate to the login page.
+     2. Enter valid username.
+     3. Enter invalid password.
+     4. Click on the login button.
+   - Expected Result: Error message is displayed indicating invalid credentials.
+
+3. Test Case: Unsuccessful Login with Invalid Username
+   - Precondition: User has an invalid username.
+   - Steps:
+     1. Navigate to the login page.
+     2. Enter invalid username.
+     3. Enter valid password.
+     4. Click on the login button.
+   - Expected Result: Error message is displayed indicating invalid credentials.
+
+4. Test Case: Empty Username and Password
+   - Precondition: None.
+   - Steps:
+     1. Navigate to the login page.
+     2. Leave username field empty.
+     3. Leave password field empty.
+     4. Click on the login button.
+   - Expected Result: Error message is displayed indicating that fields cannot be empty.
+
+5. Test Case: Password Recovery Link
+   - Precondition: User is on the login page.
+   - Steps:
+     1. Click on the "Forgot Password?" link.
+   - Expected Result: User is redirected to the password recovery page.
+
+6. Test Case: Remember Me Functionality
+   - Precondition: User has a valid username and password.
+   - Steps:
+     1. Navigate to the login page.
+     2. Enter valid username.
+     3. Enter valid password.
+     4. Check the "Remember Me" checkbox.
+     5. Click on the login button.
+   - Expected Result: User is logged in and remains logged in on subsequent visits.
+
+7. Test Case: Logout Functionality
+   - Precondition: User is logged in.
+   - Steps:
+     1. Click on the logout button.
+   - Expected Result: User is logged out and redirected to the login page.
