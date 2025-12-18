@@ -1,0 +1,56 @@
+Test Cases for Payments Functionality
+
+1. Test Case: Successful Payment
+   - Description: Verify that a payment is successfully processed with valid payment details.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Enter valid payment details.
+     3. Click on the 'Pay Now' button.
+   - Expected Result: Payment is processed successfully, and a confirmation message is displayed.
+
+2. Test Case: Payment with Invalid Card Number
+   - Description: Verify that the system handles invalid card numbers correctly.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Enter an invalid card number.
+     3. Click on the 'Pay Now' button.
+   - Expected Result: An error message is displayed indicating that the card number is invalid.
+
+3. Test Case: Payment with Expired Card
+   - Description: Verify that the system rejects payments made with an expired card.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Enter a valid card number but with an expired date.
+     3. Click on the 'Pay Now' button.
+   - Expected Result: An error message is displayed indicating that the card has expired.
+
+4. Test Case: Payment with Insufficient Funds
+   - Description: Verify that the system handles payments when there are insufficient funds.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Enter valid payment details for an account with insufficient funds.
+     3. Click on the 'Pay Now' button.
+   - Expected Result: An error message is displayed indicating insufficient funds.
+
+5. Test Case: Cancel Payment
+   - Description: Verify that a user can cancel a payment before it is processed.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Enter valid payment details.
+     3. Click on the 'Cancel' button before confirming payment.
+   - Expected Result: The payment process is canceled, and the user is returned to the cart.
+
+6. Test Case: Payment with Different Currencies
+   - Description: Verify that the system can handle payments in different currencies.
+   - Precondition: User is logged in and has items in the cart.
+   - Steps:
+     1. Navigate to the checkout page.
+     2. Select a different currency from the dropdown.
+     3. Enter valid payment details.
+     4. Click on the 'Pay Now' button.
+   - Expected Result: Payment is processed successfully in the selected currency, and a confirmation message is displayed.
