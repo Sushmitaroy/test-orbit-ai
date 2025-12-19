@@ -1,9 +1,9 @@
-🚀 Test-Orbit
+🚀 test-orbit-ai
 AI-Powered QA & Test Automation Experiments
 
 📌 Overview
 
-Test-Orbit is a personal portfolio repository that showcases my hands-on exploration of AI-driven testing, quality engineering, and automation.
+test-orbit-ai is a personal portfolio repository that showcases my hands-on exploration of AI-driven testing, quality engineering, and automation.
 
 As a QA Automation lead, my goal with this repository is to:
 
