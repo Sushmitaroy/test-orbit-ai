@@ -1,0 +1,77 @@
+C:\Users\USER\AppData\Local\Microsoft\WindowsApps\python3.12.exe C:\Users\USER\PycharmProjects\test-orbit-ai\huggingface.py
+200
+
+Title: User should be able to log in using email and password in DB
+Description: {'type': 'doc', 'version': 1, 'content': [{'type': 'paragraph', 'content': [{'type': 'text', 'text': 'As a '}, {'type': 'text', 'text': 'registered user', 'marks': [{'type': 'strong'}]}, {'type': 'text', 'text': ','}, {'type': 'hardBreak'}, {'type': 'text', 'text': 'I want to '}, {'type': 'text', 'text': 'log in using my email and password', 'marks': [{'type': 'strong'}]}, {'type': 'text', 'text': ','}, {'type': 'hardBreak'}, {'type': 'text', 'text': 'So that I can '}, {'type': 'text', 'text': 'access my database dashboard securely', 'marks': [{'type': 'strong'}]}, {'type': 'text', 'text': '.'}]}, {'type': 'paragraph', 'content': [{'type': 'text', 'text': 'Acceptance Criteria'}]}, {'type': 'paragraph', 'content': [{'type': 'text', 'text': 'User should be able to login successfully to database.'}]}]}
+
+LLM OUTPUT:
+ [
+  {
+    "title": "Successful login with valid credentials",
+    "custom_steps": "- Navigate to the login page\n- Enter a valid email address\n- Enter the correct password\n- Click the login button\n- Verify that the user is redirected to the database dashboard"
+  },
+  {
+    "title": "Login attempt with invalid email",
+    "custom_steps": "- Navigate to the login page\n- Enter an invalid email address\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with incorrect password",
+    "custom_steps": "- Navigate to the login page\n- Enter a valid email address\n- Enter an incorrect password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with empty email field",
+    "custom_steps": "- Navigate to the login page\n- Leave the email field empty\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with empty password field",
+    "custom_steps": "- Navigate to the login page\n- Enter a valid email address\n- Leave the password field empty\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with both fields empty",
+    "custom_steps": "- Navigate to the login page\n- Leave both email and password fields empty\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with email in incorrect format",
+    "custom_steps": "- Navigate to the login page\n- Enter an email address without '@'\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with SQL injection in email field",
+    "custom_steps": "- Navigate to the login page\n- Enter a SQL injection string in the email field\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with SQL injection in password field",
+    "custom_steps": "- Navigate to the login page\n- Enter a valid email address\n- Enter a SQL injection string in the password field\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with very long email address",
+    "custom_steps": "- Navigate to the login page\n- Enter a very long email address exceeding character limits\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed"
+  },
+  {
+    "title": "Login attempt with very long password",
+    "custom_steps": "- Navigate to the login page\n- Enter a valid email address\n- Enter a very long password exceeding character limits\n- Click the login button\n- Verify that an error message is displayed"
+  }
+]
+Status: 200
+Response: {"id":61,"title":"Successful login with valid credentials","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519223,"updated_by":1,"updated_on":1766519223,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":1,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a valid email address\n- Enter the correct password\n- Click the login button\n- Verify that the user is redirected to the database dashboard","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":62,"title":"Login attempt with invalid email","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519224,"updated_by":1,"updated_on":1766519224,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":2,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter an invalid email address\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":63,"title":"Login attempt with incorrect password","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519226,"updated_by":1,"updated_on":1766519226,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":3,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a valid email address\n- Enter an incorrect password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":64,"title":"Login attempt with empty email field","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519227,"updated_by":1,"updated_on":1766519227,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":4,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Leave the email field empty\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":65,"title":"Login attempt with empty password field","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519229,"updated_by":1,"updated_on":1766519229,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":5,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a valid email address\n- Leave the password field empty\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":66,"title":"Login attempt with both fields empty","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519230,"updated_by":1,"updated_on":1766519230,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":6,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Leave both email and password fields empty\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":67,"title":"Login attempt with email in incorrect format","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519231,"updated_by":1,"updated_on":1766519231,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":7,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter an email address without '@'\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":68,"title":"Login attempt with SQL injection in email field","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519233,"updated_by":1,"updated_on":1766519233,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":8,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a SQL injection string in the email field\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":69,"title":"Login attempt with SQL injection in password field","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519235,"updated_by":1,"updated_on":1766519235,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":9,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a valid email address\n- Enter a SQL injection string in the password field\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":70,"title":"Login attempt with very long email address","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519236,"updated_by":1,"updated_on":1766519236,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":10,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a very long email address exceeding character limits\n- Enter a valid password\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+Status: 200
+Response: {"id":71,"title":"Login attempt with very long password","section_id":31,"template_id":1,"type_id":7,"priority_id":2,"milestone_id":null,"refs":null,"created_by":1,"created_on":1766519238,"updated_by":1,"updated_on":1766519238,"estimate":null,"estimate_forecast":null,"suite_id":6,"display_order":11,"is_deleted":0,"case_assignedto_id":null,"custom_automation_type":null,"custom_case_is_automated":false,"custom_case_automation_candidate":null,"custom_preconds":null,"custom_steps":"- Navigate to the login page\n- Enter a valid email address\n- Enter a very long password exceeding character limits\n- Click the login button\n- Verify that an error message is displayed","custom_testrail_bdd_scenario":null,"custom_expected":null,"custom_steps_separated":null,"custom_mission":null,"custom_goals":null,"comments":[],"labels":[]}
+
+Process finished with exit code 0
